@@ -1,0 +1,13 @@
+<svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ae Flag" clip-path="url(#clip0_795_2558)">
+<path id="Vector" d="M0 0H48V12H0V0Z" fill="#00732F"/>
+<path id="Vector_2" d="M0 12H48V24H0V12Z" fill="white"/>
+<path id="Vector_3" d="M0 24H48V36H0V24Z" fill="black"/>
+<path id="Vector_4" d="M0 0H16.5V36H0V0Z" fill="#FF0000"/>
+</g>
+<defs>
+<clipPath id="clip0_795_2558">
+<rect width="48" height="36" fill="white"/>
+</clipPath>
+</defs>
+</svg>

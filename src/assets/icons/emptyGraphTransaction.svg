@@ -1,0 +1,32 @@
+<svg width="378" height="159" viewBox="0 0 378 159" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_878_2526)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 68.0361H377V68.9639H5V68.0361Z" fill="#6C6CF4" fill-opacity="0.3"/>
+</g>
+<g style="mix-blend-mode:lighten" opacity="0.3">
+<path d="M1 123.791C1 123.791 36.2219 148 63.0969 148C89.972 148 101.681 123.791 125.764 123.791C143.456 123.791 160.278 153.925 181.236 153.925C236 153.925 220.017 29.1631 247.75 29.1631C275.483 29.1631 269.251 130 306.5 130C330.003 130 343.4 102.536 377 102.536" stroke="#8C8C8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<ellipse cx="247.75" cy="29.1631" rx="7.83332" ry="6" fill="#8C8C8C"/>
+<g style="mix-blend-mode:lighten" opacity="0.63">
+<ellipse cx="186.389" cy="154.163" rx="5.22222" ry="4" fill="#8C8C8C"/>
+</g>
+<g style="mix-blend-mode:lighten" opacity="0.63">
+<ellipse cx="130.25" cy="125.163" rx="5.22222" ry="4" fill="#8C8C8C"/>
+</g>
+<g style="mix-blend-mode:lighten" opacity="0.63">
+<ellipse cx="303.889" cy="129.163" rx="5.22223" ry="4" fill="#8C8C8C"/>
+</g>
+<g style="mix-blend-mode:lighten" opacity="0.63">
+<ellipse cx="363.944" cy="104.163" rx="5.22221" ry="4" fill="#8C8C8C"/>
+</g>
+<g style="mix-blend-mode:lighten" opacity="0.63">
+<ellipse cx="70.1944" cy="147.163" rx="5.22222" ry="4" fill="#8C8C8C"/>
+</g>
+<g style="mix-blend-mode:lighten" opacity="0.63">
+<ellipse cx="10.1387" cy="130.163" rx="5.22222" ry="4" fill="#8C8C8C"/>
+</g>
+<defs>
+<clipPath id="clip0_878_2526">
+<rect width="372" height="137" fill="white" transform="translate(5)"/>
+</clipPath>
+</defs>
+</svg>

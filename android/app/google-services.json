@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "493925147275",
+    "project_id": "ignito-cashlog",
+    "storage_bucket": "ignito-cashlog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493925147275:android:667b64580c9088c4ea2a8e",
+        "android_client_info": {
+          "package_name": "com.binarydiaries.cashlog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493925147275-3c50pgiqc4g8813pr6ulv9671bvagtuq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.binarydiaries.cashlog",
+            "certificate_hash": "e2cf19364ec0b09a4c0eaf856a9c01374e39f411"
+          }
+        },
+        {
+          "client_id": "493925147275-rm6v5dsr5a2d5fgtrpk04lnomseajpaf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.binarydiaries.cashlog",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "493925147275-4jsfooess2ev0fd3ta7fj1piquhgs75q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPqIJfbMK00_IoGqIX-bgvF4vddj81mZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493925147275-4jsfooess2ev0fd3ta7fj1piquhgs75q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "493925147275-dj9pso60ob7b6lcnklldhfp5kl0dgsvl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.binarydiaries.cashlog"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
