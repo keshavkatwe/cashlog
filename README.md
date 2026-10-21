@@ -1,81 +1,99 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Cashlog
 
-# Getting Started
+**A React Native app for keeping track of everyday spending.**
 
-> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Record transactions, organize wallets, and explore spending by category in a mobile interface built with TypeScript. This repository contains the Android and iOS client; the API is maintained in [cashlog-backend](https://github.com/keshavkatwe/cashlog-backend).
 
-## Step 1: Start the Metro Server
+## What’s inside
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Transactions:** add and edit expenses with an amount, category, wallet, currency, date, merchant, and note.
+- **Wallets:** create and manage wallets, with a wallet overview on the home screen.
+- **Spending insights:** review category breakdowns and filter transaction history by date and category.
+- **Account flows:** email/password and Google sign-in, OTP verification, password reset, and profile settings.
+- **Personal settings:** choose a currency, configure transaction reminders, and enable the biometric app lock on supported devices.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Built with
 
-```bash
-# using npm
-npm start
+| Area | Technology |
+| --- | --- |
+| App | React Native 0.73.2, React 18, TypeScript |
+| Navigation and state | React Navigation, Redux Toolkit, React Redux |
+| UI and charts | Styled Components, React Native SVG and SVG Charts, Lottie |
+| Forms and API | React Hook Form, Yup, Axios |
+| Native integrations | Firebase, Google Sign-In, Notifee, device biometrics |
 
-# OR using Yarn
+## Run locally
+
+### 1. Install the toolchain
+
+Use Node.js compatible with the `>=18` engine declared in `package.json` and Yarn Classic (the repository uses a v1 `yarn.lock`). Set up the Android or iOS native development tools for React Native 0.73. iOS development also requires macOS, Xcode, Ruby, Bundler, and the CocoaPods version specified in the Gemfile.
+
+```sh
+git clone https://github.com/keshavkatwe/cashlog.git
+cd cashlog
+yarn install --frozen-lockfile
+```
+
+### 2. Configure your development services
+
+Point `baseURL` in [`src/services/axiosInstance/axiosInstance.ts`](src/services/axiosInstance/axiosInstance.ts) at your development API. The checked-in default is `https://api.cashlog.in/`; the mobile repository does not start a backend server.
+
+For your own app build, configure Firebase and Google Sign-In for your Android package and iOS bundle identifier. Review the native Firebase configuration and `GoogleSignin.configure` in [`src/App.tsx`](src/App.tsx). Email authentication and account data also depend on the API configuration. Keep server credentials and private signing material outside the repository.
+
+For iOS, install the Ruby and native dependencies from the repository root:
+
+```sh
+bundle install
+cd ios
+bundle exec pod install
+cd ..
+```
+
+### 3. Start the app
+
+Run Metro in one terminal:
+
+```sh
 yarn start
 ```
 
-## Step 2: Start your Application
+In another terminal, launch a configured emulator, simulator, or connected development device:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
+```sh
+# Android
 yarn android
-```
 
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
+# iOS
 yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Repository map
 
-This is one way to run your app â you can also run it directly from within Android Studio and Xcode respectively.
+```text
+src/
+  pages/       App screens and navigation flows
+  widgets/     Transaction forms, wallet cards, filters, and settings
+  components/  Shared UI elements
+  services/    API client, authentication, and domain requests
+  store/       Redux state and typed hooks
+  helpers/     Storage, formatting, and native helpers
+android/       Android native project
+ios/           iOS native project
+__tests__/     Jest tests
+```
 
-## Step 3: Modifying your App
+## Development commands
 
-Now that you have successfully run the app, let's modify it.
+| Command | Purpose |
+| --- | --- |
+| `yarn start` | Start Metro. |
+| `yarn android` / `yarn ios` | Run a native development build. |
+| `yarn lint` | Run ESLint and TypeScript checks. |
+| `yarn test` | Run the existing Jest suite. |
+| `yarn build:release` | Build an Android release using the configured native toolchain. |
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd â</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+The distribution scripts in `package.json` bump versions and push commits and tags. Run them only when intentionally preparing a release.
 
-   For **iOS**: Hit <kbd>Cmd â</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## Explore more
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-
-Testing
+Built by [Keshav Katwe](https://github.com/keshavkatwe). See the [portfolio](https://keshavkatwe.github.io/) and [Agenvik](https://github.com/keshavkatwe/agenvik), an open-source AI agent platform.
